@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>_Layout</title>
+</head>
+<body>
+    <img src="https://pp.vk.me/c627120/v627120551/3e8b0/Js99plcpE9k.jpg" width="1200" />
+    <ul>
+        <li>@Html.ActionLink("Sweet Home", "Index", "Home")</li>
+        <li>@Html.ActionLink("Мои любимые книги", "Books", "Home")</li>
+        <li>@Html.ActionLink("То, что я люблю", "Like", "About")</li>
+        <li>@Html.ActionLink("Моя мечта", "Want", "About")</li>
+    </ul>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

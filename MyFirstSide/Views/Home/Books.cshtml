@@ -1,0 +1,14 @@
+﻿
+@model IEnumerable<MyFirstSide.Models.Book>
+<h1>Мои любимые книги: </h1>
+<div>
+    <ul>
+        @foreach (var book in Model)
+        {
+            <li>
+                @(book.Author + " " + book.Name)
+            </li>
+        }
+        <li>И кое-что еще...</li>
+    </ul>
+</div>
